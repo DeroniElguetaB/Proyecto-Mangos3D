@@ -54,7 +54,6 @@ header a:hover{
     padding: 8px;
     border-radius: 20px;
     transition-duration: 0.5s;
-    /* filter: opacity(0.6); */
 }
 /* ----------------------------------------Main---------------------------------------- */
 main{
@@ -62,7 +61,7 @@ main{
     color: white;
     text-align: center;
     width: 100%;
-    /* padding-top: 60px; */
+    padding-top: 60px;
 }
 .portada{
     display: flex;

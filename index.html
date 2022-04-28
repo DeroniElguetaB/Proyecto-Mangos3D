@@ -4,68 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="Estilos/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
     <title>MANGOS3D</title>
 </head>
 <body>
-    <header>
-        <strong class="logo">mangos<span>3D</span></strong>
-            <nav class="barra">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="compañia.html">COMPAÑÍA</a></li>
-                    <li><a href="misionvision.html">MISION/VISION</a></li>
-                    <li><a href="Productos.html">PRODUCTOS</a></li>
-                    <li><a href="pedidos.html">PEDIDOS</a></li>
-                </ul>
-            </nav>
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <strong class="logo">mangos<span>3D</span></strong>
+            </div>
+            <div class="col-sm">
+                <nav class="barra">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href="compañia.html">COMPAÑÍA</a></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href="misionvision.html">MISION/VISION</a></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href="Productos.html">PRODUCTOS</a></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li class="nav-item">
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
-        <div class="portada">
-            <section class="img-portada">
-                <img class="logotipo" src="Images/logotipo.png" alt="logotipo">
+    <main class="main">
+        <div class="container-fluid">
+            <section class="portada row">
+                <img class="img-fluid" src="Images/R.jpg" style="width:100%" alt="portada">
             </section>
         </div>
-        <h2>¿Quienes somos?</h2>
-        <div class="quienessomos">
-            <section class="imgmenu">
-                <img src="Images/designer-work-office.jpg" alt="diseño" width="680">
-            </section>
-            <section class="textomenu">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit iure esse ea exercitationem ducimus<br> 
-                    quas veritatis earum. Dolores non ullam dolor! Eligendi assumenda illo explicabo magnam reiciendis facilis <br> 
-                    ratione aut ipsam tenetur doloremque! Voluptatum molestias dolores laborum ad veritatis vitae numquam fugiat <br> 
-                    esciunt, minus suscipit consequatur quis necessitatibus nobis soluta, tempora nisi? Provident sunt sint <br> 
-                    quidem minus. Nesciunt ab reprehenderit saepe alias maiores hic tempora nihil nemo, deleniti ipsum, amet <br> 
-                    dolorum veniam maxime quis in illo. Voluptatibus, provident! Sapiente, eos! Beatae deserunt dicta a culpa <br> 
-                    voluptates temporibus nulla, voluptatum non iure blanditiis officiis, asperiores nobis, doloremque distinctio <br> 
-                </p>
+        <div class="container-fluid">
+            <h2>¿Quienes somos?</h2>
+            <div class="quienessomos row">
+                <section class="imgmenu col-sm">
+                    <img class="img-fluid" src="Images/designer-work-office.jpg" style="width:100%" alt="diseño">
+                </section>
+                <section class="textomenu col-sm">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit iure esse ea exercitationem ducimus<br>
+                        quas veritatis earum. Dolores non ullam dolor! Eligendi assumenda illo explicabo magnam reiciendis facilis <br>
+                        ratione aut ipsam tenetur doloremque! Voluptatum molestias dolores laborum ad veritatis vitae numquam fugiat <br>
+                        esciunt, minus suscipit consequatur quis necessitatibus nobis soluta, tempora nisi? Provident sunt sint <br>
+                        quidem minus. Nesciunt ab reprehenderit saepe alias maiores hic tempora nihil nemo, deleniti ipsum, amet <br>
+                        dolorum veniam maxime quis in illo. Voluptatibus, provident! Sapiente, eos! Beatae deserunt dicta a culpa <br>
+                        voluptates temporibus nulla, voluptatum non iure blanditiis officiis, asperiores nobis, doloremque distinctio <br>
+                    </p>
+                </section>
+            </div>
         </div>
-        <h2>¿Que hacemos?</h2> 
-        <section class="quehacemos">
-            <div class="item1"></div>
-            <div class="item2"></div>
-            <div class="item3"></div>
-            <div class="item4"></div>
-            <div class="item5"></div>
-        </section>
-        <h2>¿Como trabajamos?</h2>
-        <div class="comotrabajamos">
-            <section>
-                <iframe class="video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FClipperTops%2Fvideos%2F2449748185107735%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            </section>
+        <div class="container-fluid">
+            <h2>¿Que hacemos?</h2>
+                    <section class="quehacemos row">
+                        <div class="item1"></div>
+                        <div class="item2"></div>
+                        <div class="item3"></div>
+                        <div class="item4"></div>
+                        <div class="item5"></div>
+                    </section>
+        </div>
+        <div class="container-fluid">
+            <div class="">
+                <h2>¿Como trabajamos?</h2>
+                <div class="comotrabajamos">
+                    <section>
+                        <iframe class="video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FClipperTops%2Fvideos%2F2449748185107735%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    </section>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <strong>Contacto</strong>
-            <nav>
-                <a href="https://www.facebook.com/ClipperTops" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <p>Todos los derechos reservados por copyright</p>
-            </nav>
+    <footer class="footer">
+        <div class="container-fluid">
+            <h4>Contacto</h4>
+                <nav>
+                    <a href="https://www.facebook.com/ClipperTops" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <p class="lead">Todos los derechos reservados por copyright</p>
+                </nav>
+        </div>
     </footer>
-        
+    </div>
 </body>
 </html>

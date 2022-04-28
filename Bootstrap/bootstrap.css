@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------------------------------------Header---------------------------------------- */
+.header{
+    background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%);
+    color: white;
+    filter: opacity(85%);
+    text-decoration: none;
+    /* position: fixed; */
+}
+/* ----------------------------------------Main---------------------------------------- */
+.main{
+    background-color: rgb(35, 34, 34);
+    color: white;
+}
+
+/* ----------------------------------------Footer---------------------------------------- */
+.footer{
+    background-image: linear-gradient(to top ,orangered, rgb(35, 34, 34) 90%);
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    /* padding-top: 5px; */
+    padding-bottom: 5px;
+}
+footer nav a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}

@@ -14,55 +14,46 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%);">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><strong class="logo">mangos<span>3D</span></strong></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark" style="background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%);">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">MANGOS<span>3D</span></a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="compañia.html">COMPAÑÍA</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="misionvision.html">MISION/VISION</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="Productos.html">PRODUCTOS</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li class="nav-item">
-                </ul>
-            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="pestañas nav-link" href="compañia.html">COMPAÑÍA</a>
+                </li>
+                <li class="nav-item">
+                <a class="pestañas nav-link" href="misionvision.html">MISION/VISION</a>
+                </li>
+                <li class="nav-item">
+                <a class="pestañas nav-link" href="Productos.html">PRODUCTOS</a>
+                </li>
+                <li class="nav-item">
+                <a class="pestañas nav-link" href="pedidos.html">PEDIDOS</a>
+                </li>
+            </ul>
             </div>
         </nav>
     </header>
-    <!-- <header class="header container-fluid" style="background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%);">
-        <div class="row">
-            <div class="col-sm">
-                <strong class="logo">mangos<span>3D</span></strong>
-            </div>
-            <div class="col-sm">
-                <nav class="barra">
-                    <ul class="nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">INICIO</a></li class="nav-item">
-                        <li class="nav-item"><a class="nav-link" href="compañia.html">COMPAÑÍA</a></li class="nav-item">
-                        <li class="nav-item"><a class="nav-link" href="misionvision.html">MISION/VISION</a></li class="nav-item">
-                        <li class="nav-item"><a class="nav-link" href="Productos.html">PRODUCTOS</a></li class="nav-item">
-                        <li class="nav-item"><a class="nav-link" href="pedidos.html">PEDIDOS</a></li class="nav-item">
-                    </ul>
-                </nav>
-            </div>
-        </div> -->
-    </header>
     <main class="main">
-        <div class="container-fluid">
-            <section class="portada row">
-                <img class="img-fluid" src="Images/R.jpg" style="width:100%" alt="portada">
-            </section>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            <h1></h1>
+            <p> </p>
+            </div>
         </div>
         <div class="container-fluid" style="background-image: linear-gradient(to bottom , rgb(35, 34, 34),orangered)">
             <h2>¿Quienes somos?</h2>
             <div class="quienessomos row">
                 <section class="imgmenu col-sm">
-                    <img class="img-fluid" src="Images/designer-work-office.jpg" style="width:100%" alt="diseño">
+                    <img class="img-fluid align-items-center" src="Images/designer-work-office.jpg" style="width:600px" alt="diseño">
                 </section>
-                <section class="textomenu col-sm">
+                <section class="textomenu justify-content-center align-items-center col-sm">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit iure esse ea exercitationem ducimus<br>
                         quas veritatis earum. Dolores non ullam dolor! Eligendi assumenda illo explicabo magnam reiciendis facilis <br>
                         ratione aut ipsam tenetur doloremque! Voluptatum molestias dolores laborum ad veritatis vitae numquam fugiat <br>
@@ -88,7 +79,7 @@
             <div class="">
                 <h2>¿Como trabajamos?</h2>
                 <div class="comotrabajamos">
-                    <section>
+                    <section class="video">
                         <iframe class="video" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FClipperTops%2Fvideos%2F2449748185107735%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                     </section>
                 </div>
@@ -96,12 +87,12 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container-fluid-footer">
             <h4>Contacto</h4>
                 <nav>
-                    <a href="https://www.facebook.com/ClipperTops" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ClipperTops" target="_blank"><i class="iconos fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="iconos fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/3dmangos/" target="_blank"><i class="iconos fa-brands fa-instagram"></i></a>
                     <p class="lead">Todos los derechos reservados por copyright</p>
                 </nav>
         </div>

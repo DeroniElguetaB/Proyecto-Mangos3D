@@ -272,7 +272,7 @@ section div:hover{
     border-radius: 15px;
 }
 .formulario{
-    height: 700px;
+    height: auto;
 }
 /* ----------------------------------------Footer---------------------------------------- */
 .footer{

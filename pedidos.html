@@ -48,36 +48,76 @@
                 </div>
             </div>
         <h2>PEDIDOS</h2>
-        <section>
-            <form class="formulario" action="" method="post">
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" required placeholder="Ej. Alexis"><br>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido" required  placeholder="Ej. Fernandez"><br>
-                <br>
-                <label for="">Sexo</label><br>
-                <input name="sexo" type="radio">
-                <label for="">Masculino</label>
-                <input name="sexo" type="radio">
-                <label for="">Femenino</label>
-                <input name="sexo" type="radio">
-                <label for="">Indefinido</label><br>
-                <br>
-                <label for="mail">Mail</label>
-                <input type="mail" name="Mail"required  placeholder="Ej. alexisfernandez@gmail.com"><br>
-                <label for="Telefono">Telefono (opcional)</label>
-                <input type="number" name="Telefono" placeholder="Ej. 2617365342"><br>
-                <br>
-                <label for="">Fecha de pedido</label>
-                <input type="date"><br>
-                <textarea name="pedido" required placeholder="Descricpcion del producto (caracteristicas, color, medidas, proposito, etc)" id="pedidos" cols="50" rows="10"></textarea><br>
-                <input type="checkbox">
-                <label for="checkbox">Acepto que el equipo de MANGOS3D se comunique conmigo por el pedido del producto.</label><br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+        <div class="container formulario">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault01">Nombre</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Ej. Alexis" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault02">Apellido</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="" placeholder="Ej. Fernandez" required>
+                    </div>
+                </div>
+                <div>
+                <div class="form-group row">
+                    <legend class="col-form-label col-sm-2 float-sm-left pt-0">Sexo</legend>
+                    <div class="col-sm-10">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">Masculino</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">Femenino</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3">Indefinido</label>
+                    </div>
+                    </div>   
+                </div>  
+                <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault03">Ciudad</label>
+                    <input type="text" class="form-control" id="validationDefault03" placeholder="Ej. Mendoza" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault04">Provincia</label>
+                    <select class="custom-select" id="validationDefault04" required>
+                    <option selected disabled value="">Elegir</option>
+                    <option>Mendoza</option>
+                    <option>Santa Fe</option>
+                    <option>Buenos Aires</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault05">Codigo Postal</label>
+                    <input type="text" class="form-control" id="validationDefault05" placeholder="Ej. 5345" required>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej. alexisfernandez@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Telefono</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ej. 2619830300" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder= "Descricpcion del producto (caracteristicas, color, medidas, proposito, etc)" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Acepto que el equipo de MANGOS3D se comunique conmigo por el pedido del producto.</label>
+                    </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
             </form>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="container-fluid-footer">

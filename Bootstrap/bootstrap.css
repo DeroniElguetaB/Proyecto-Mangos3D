@@ -55,6 +55,27 @@ h2{
 }
 .parrafo{
     text-align: center;
+    padding-bottom: 2rem;
+}
+.Mision{
+    background-image: linear-gradient(to bottom , orangered -10%, rgb(35, 34, 34));
+}
+.mision{
+    text-shadow: 0 0 20px rgb(35, 34, 34) ;
+}
+.Stock{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px orangered;
+    margin-bottom: 1rem;
+}
+.stock{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4rem;
+}
+.pieimagen{
+    height: 10rem;
+    text-align: center;
 }
 .jumbotron{
     background-image: url(../Images/R.jpg);
@@ -238,10 +259,20 @@ section div:hover{
 .comotrabajamos{
     height: 31.5rem;
     padding-bottom: 40px;
-    
 }
 .video{
     border-radius: 10px;
+}
+.slide{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.slide img{
+    height: 550px;
+    border-radius: 15px;
+}
+.formulario{
+    height: 700px;
 }
 /* ----------------------------------------Footer---------------------------------------- */
 .footer{

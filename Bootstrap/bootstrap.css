@@ -22,17 +22,22 @@ header span{
     padding-right: 3rem;
 }
 nav ul li{
-    padding-left: 1rem;
+    padding-left: 3rem;
+}
+.navbar-nav{
+    color: orangered;
 }
 .navbar-brand:hover{
-    -webkit-transform: scale(1);
-    transform: scale(1.2);
+    /* -webkit-transform: scale(1); */
+    transform: scale(1.1);
     transition-duration: 0.25s;
+    text-shadow: 0 0 7px orangered;
 }
-header .pestañas:hover{
-    color: rgb(35, 34, 34) !important;
-    -webkit-transform: scale(1);
-    transform: scale(1.25);
+.nav-link:hover{
+    color: rgb(35, 34, 34, 0.2) !important;
+    text-shadow: 0 0 0.8px rgb(35, 34, 34);
+    /* -webkit-transform: scale(1); */
+    /* transform: scale(1.03); */
     transition-duration: 0.25s;
 }
 /* ----------------------------------------Main---------------------------------------- */
@@ -48,56 +53,56 @@ h2{
     color: white;
     text-shadow: 0 0 5px orangered;
 }
+.parrafo{
+    text-align: center;
+}
 .jumbotron{
     background-image: url(../Images/R.jpg);
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 700px;
     color: orangered;
     text-shadow: 0 0 5px white;
     border-radius: 0;
     margin-bottom: 0px;
 }
 .img-fluid{
-    margin-bottom: 2rem;
     border-radius: 10px;
 }
-/* .textomenu{
-
-} */
 .container-fluid{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 section{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.quehacemos{
-    display: grid;
-    align-content: center;
-    grid-template-areas: 
-        "item1 item2 item4 item5"
-        "item1 item3 item4 item5";
-    grid-template-columns:  1.2fr 0.8fr 1.3fr 0.7fr ;
-    grid-template-rows: 1fr 1fr ;
-    gap: 25px;
-    padding: 30px;
-    width: auto;
-    height: 500px;
-}
-
 section div:hover{
+    filter: contrast(120%);
     -webkit-transform: scale(1);
     transform: scale(1.1);
-    transition-duration: (0.25);
+    transition-duration: 0.25s;
+}
+.textomenu{
+    padding: 30px;
+}
+.nosotros{
+    margin-bottom: 90px;
+}
+/* .quienesomos{
+    padding: 5px;
+} */
+.quehacemos{
+    margin-bottom: 85px;
+}
+.parrafo-intermedio{
+    padding-bottom: 20px;
 }
 .item1{
     grid-area: item1;
     background-image: url(../Images/producto5.jpg);
     background-size: cover;
     background-position: center;
-    background-position-x: -170px;
     border-radius: 10px;
 
 }
@@ -113,7 +118,6 @@ section div:hover{
     background-image: url(../Images/producto9.jpg);
     background-size: cover;
     background-position: center;
-    background-position-x: -25px;
     border-radius: 10px;
 }
 .item4{
@@ -128,41 +132,138 @@ section div:hover{
     background-image: url(../Images/producto3.jpg);
     background-size: cover;
     background-position: center;
-    background-position-x: -30px;
     border-radius: 10px;
 }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 0px){ 
+    .quehacemos{
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0.7fr 1fr 1.3fr 1fr; 
+        grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        "item4 item4"
+        "item5 item5"; 
+        gap: 25px;
+        padding: 20px;
+        width: auto;
+        height: 1500px; 
+    }
+    .item1{
+        background-position-y: -120px;
+    }
+    .item2{
+        background-position-x: -160px;
+    }
+    .item3{
+        background-position-x: -110px;
+    }
+    .item5{
+        background-position-x: 0px;
+        background-position-y: -300px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    .quehacemos{
+        display: grid; 
+        grid-template-columns: 1fr 1.3fr 0.5fr 1.2fr; 
+        grid-template-rows: 0.5fr 0.5fr 1fr; 
+        grid-template-areas: 
+        "item1 item1 item2 item2"
+        "item1 item1 item3 item3"
+        "item4 item4 item4 item5";
+        gap: 25px;
+        padding: 20px;
+        width: auto;
+        height: 1000px;
+        }
+        .item1{
+            background-position-x: -170px;
+            background-position-y: 0;
+        }
+        .item2{
+            background-position-x: 0;
+        }
+        .item3{
+            background-position-x: 0;
+        }
+        .item4{
+            background-position-x: 0;
+        }
+        .item5{
+            background-position-x: 0;
+            background-position-y: 0;
+        }
+}
+
+/* // Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px){
+    .quehacemos{
+        display: grid;
+        align-content: center;
+        grid-template-areas: 
+            "item1 item2 item4 item5"
+            "item1 item3 item4 item5";
+        grid-template-columns:  1.2fr 0.8fr 1.3fr 0.7fr ;
+        grid-template-rows: 1fr 1fr ;
+        gap: 25px;
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: auto;
+        height: 450px;
+    }
+    .item1{
+        background-position-x: -190px;
+        background-position-y: 0;
+    }
+    .item2{
+        background-position-x:-20px;
+    }
+    .item3{
+        background-position-x:-40px;
+    }
+    .item4{
+        background-position-x: -80px;
+    }
+    .item5{
+        background-position-x: -40px;
+        background-position-y: 0;
+    }
+}
+.comotrabajamos{
+    height: 31.5rem;
+    padding-bottom: 40px;
+    
+}
 .video{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    text-align: center;
     border-radius: 10px;
 }
 /* ----------------------------------------Footer---------------------------------------- */
 .footer{
     background-image: linear-gradient(to top ,orangered, rgb(35, 34, 34) 90%);
     color: white;
-    font-size: 45px;
-    text-align: center;
-    /* padding-top: 5px; */
-    padding-bottom: 5px;
+    text-align: center !important;
+    padding-top: 2rem;
+    padding-bottom: 1.3rem;
 }
-footer nav a{
-    margin-left: 10px;
-    margin-right: 10px;
+footer div a{
+    margin-left: 17px;
+    margin-right: 17px;
     color: white;
-    text-decoration: none;
-    padding-left: 1rem;
 }
-.container-fluid-footer{
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+.icono{
+    font-size: 2.4rem;
+    padding: 0.3rem;
 }
-footer nav a{
-    font-size: 2rem;
-}
-footer .iconos:hover{
+.iconos:hover{
     color: rgb(35, 34, 34);
     -webkit-transform: scale(1);
-    transform: scale(1.5);
+    transform: scale(1.35);
     transition-duration: 0.25s;
+    text-shadow: 0 0 5px rgb(35, 34, 34);
 }

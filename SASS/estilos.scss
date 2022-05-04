@@ -3,75 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+$color1: orangered;
+$color2: white;
+$color3: rgb(35, 34, 34);
+$color4: black;
+
+
 /* ----------------------------------------Header---------------------------------------- */
-nav{
+header nav{
     font-size: 1.09rem;
+    span{
+        color: $color2;
+        font-style: italic;
+        padding: 0 auto;
+    }
+    .navbar-brand{
+        color: $color1 !important;
+        font-size: 1.6rem;
+        padding-left: 3rem;
+    }
+    div ul li{
+        padding-left: 3rem;
+    }
+        div .navbar-nav{
+            color: $color1;
+            padding-left: 1rem;
+            padding-right: 3rem;
+        }
+    
 }
-header span{
-    color: white;
-    font-style: italic;
-    padding: 0 auto;
-}
-.navbar-brand{
-    color: orangered !important;
-    font-size: 1.6rem;
-    padding-left: 3rem;
-}
-.navbar-nav{
-    padding-left: 1rem;
-    padding-right: 3rem;
-}
-nav ul li{
-    padding-left: 3rem;
-}
-.navbar-nav{
-    color: orangered;
-}
+
 .navbar-brand:hover{
     /* -webkit-transform: scale(1); */
     transform: scale(1.1);
     transition-duration: 0.25s;
-    text-shadow: 0 0 7px orangered;
+    text-shadow: 0 0 7px $color1;
 }
 .nav-link:hover{
-    color: white !important;
+    color: $color2 !important;
     /* color: rgb(35, 34, 34) !important; */
     /* filter: opacity(80%); */
-    text-shadow: 0 0 20px black;
+    text-shadow: 0 0 20px $color4;
     -webkit-transform: scale(1);
     transform: scale(1.1);
     transition-duration: 0.25s;
 }
 /* ----------------------------------------Main---------------------------------------- */
 .main{
-    background-color: rgb(35, 34, 34);
+    background-color: $color3;
     color: white;
+    div h2{
+        margin-top: 1rem;
+        margin-bottom: 3rem ;
+        padding-bottom: 1rem;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 5px $color1;
+        }
+    div section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
-h2{
-    margin-top: 1rem;
-    margin-bottom: 3rem ;
-    padding-bottom: 1rem;
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 5px orangered;
-}
+
 .parrafo{
     text-align: center;
     padding-bottom: 2rem;
 }
 .Mision{
-    background-image: linear-gradient(to bottom , orangered -10%, rgb(35, 34, 34));
+    background-image:linear-gradient(to bottom , $color1 -10%, $color3);
 }
 .mision{
-    text-shadow: 0 0 20px rgb(35, 34, 34) ;
+    text-shadow: 0 0 20px $color3 ;
 }
 .Stock{
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 20px orangered;
+    text-shadow: 0 0 20px $color1;
     margin-bottom: 1rem;
 }
 .stock{
-    color: rgb(255, 255, 255);
+    color: $color2;
     text-align: center;
     margin-top: 4rem;
 }
@@ -84,8 +96,8 @@ h2{
     background-size: cover;
     background-position: center;
     height: 700px;
-    color: orangered;
-    text-shadow: 0 0 5px white;
+    color: $color1;
+    text-shadow: 0 0 5px $color2;
     border-radius: 0;
     margin-bottom: 0px;
 }
@@ -96,10 +108,7 @@ h2{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-section{
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
+
 section div:hover{
     filter: contrast(120%);
     -webkit-transform: scale(1);
@@ -175,15 +184,22 @@ section div:hover{
         height: 1500px; 
     }
     .item1{
+        grid-area: item1;
         background-position-y: -120px;
     }
     .item2{
+        grid-area: item2;
         background-position-x: -160px;
     }
     .item3{
+        grid-area: item3;
         background-position-x: -110px;
     }
+    .item4{
+        grid-area: item4;
+    }
     .item5{
+        grid-area: item5;
         background-position-x: 0px;
         background-position-y: -300px;
     }
@@ -205,19 +221,24 @@ section div:hover{
         height: 1000px;
         }
         .item1{
+            grid-area: item1;
             background-position-x: -170px;
             background-position-y: 0;
         }
         .item2{
+            grid-area: item2;
             background-position-x: 0;
         }
         .item3{
+            grid-area: item3;
             background-position-x: 0;
         }
         .item4{
+            grid-area: item4;
             background-position-x: 0;
         }
         .item5{
+            grid-area: item5;
             background-position-x: 0;
             background-position-y: 0;
         }
@@ -241,19 +262,24 @@ section div:hover{
         height: 450px;
     }
     .item1{
+        grid-area: item1;
         background-position-x: -190px;
         background-position-y: 0;
     }
     .item2{
+        grid-area: item2;
         background-position-x:-20px;
     }
     .item3{
+        grid-area: item3;
         background-position-x:-40px;
     }
     .item4{
+        grid-area: item4;
         background-position-x: -80px;
     }
     .item5{
+        grid-area: item5;
         background-position-x: -40px;
         background-position-y: 0;
     }
@@ -278,7 +304,7 @@ section div:hover{
 }
 /* ----------------------------------------Footer---------------------------------------- */
 .footer{
-    background-image: linear-gradient(to top ,orangered, rgb(35, 34, 34) 90%);
+    background-image: linear-gradient(to top , $color1, $color3 90%);
     color: white;
     text-align: center !important;
     padding-top: 2rem;
@@ -294,7 +320,7 @@ footer div a{
     padding: 0.3rem;
 }
 .iconos:hover{
-    color: rgb(35, 34, 34);
+    color: $color3;
     -webkit-transform: scale(1);
     transform: scale(1.35);
     transition-duration: 0.25s;

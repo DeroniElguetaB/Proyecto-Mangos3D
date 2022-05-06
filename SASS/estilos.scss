@@ -186,14 +186,14 @@ section div:hover{
         "item2 item3"
         "item4 item4"
         "item5 item5"; 
-        gap: 25px;
-        padding: 20px;
+        gap: 13px;
+        padding: 5px;
         width: auto;
         height: 1500px; 
     }
     .item1{
         grid-area: item1;
-        background-position-y: -242.5px;
+        background-position-y: -255px;
     }
     .item2{
         grid-area: item2;

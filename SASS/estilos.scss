@@ -91,7 +91,7 @@ header nav{
     height: 10rem;
     text-align: center;
 }
-.jumbotron{
+.portada{
     background-image: url(../Images/R.jpg);
     background-size: cover;
     background-position: center;
@@ -101,6 +101,15 @@ header nav{
     border-radius: 0;
     margin-bottom: 0px;
 }
+
+.LOGO {
+    background-image: url(../Images/logotipo.png);
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    filter: drop-shadow(20px 12px 5px $color3);
+}
+
 .img-fluid{
     border-radius: 10px;
 }
@@ -242,6 +251,7 @@ section div:hover{
         background-position-x: 0px;
         background-position-y: -300px;
     }
+    
 }
 
 /* // Medium devices (tablets, 768px and up) */

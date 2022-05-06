@@ -89,13 +89,13 @@ header nav div .navbar-nav {
 .Stock {
   color: white;
   text-shadow: 0 0 20px orangered;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .stock {
   color: white;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 0.5rem;
 }
 
 .pieimagen {
@@ -249,6 +249,10 @@ section div:hover {
     background-position-x: 0px;
     background-position-y: -400px;
   }
+  .slide {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -298,6 +302,10 @@ section div:hover {
     grid-area: item5;
     background-position-x: 0px;
     background-position-y: -300px;
+  }
+  .slide {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

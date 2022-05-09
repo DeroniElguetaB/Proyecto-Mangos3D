@@ -74,15 +74,44 @@ header nav{
     text-align: center;
     padding-bottom: 2rem;
 }
+
+$botones: (
+    vermas1: orangered,
+    vermas2: rgb(255, 255, 255),
+);
+
+@each $vermas, $color in $botones {
+    .btn--#{$vermas} {
+        font-size: 17px;
+        color: $color;
+        width: auto;
+        height: 50px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        border-radius: 20px;
+        text-transform: uppercase;
+        
+        margin-right: 20px;
+        margin-top: -20px;
+    }
+    .btn--#{$vermas}:hover {
+        color: $color;
+        text-shadow: 0 0 5px $color;
+        transform: scale(1.1);
+        transition-duration: 0.25s;
+    }
+}
+
 .portada{
     background-image: url(../Images/R.jpg);
     background-size: cover;
     background-position: center;
     height: 700px;
-    color: $color1;
-    text-shadow: 0 0 5px $color2;
-    border-radius: 0;
-    margin-bottom: 0px;
+    // color: $color1;
+    // text-shadow: 0 0 5px $color2;
+    // border-radius: 0;
+    // margin-bottom: 0px;
 }
 .LOGO {
     background-image: url(../Images/logotipo.png);
@@ -103,9 +132,6 @@ section div:hover{
 }
 
 /* ---------------PAGES HOME---------------- */
-.nosotros{
-    margin-bottom: 90px;
-}
 .textomenu{
     padding: 30px;
 }
@@ -113,7 +139,7 @@ section div:hover{
     border-radius: 10px;
 }
 .dedicamos{
-    margin-bottom: 85px;
+    margin-bottom: 70px;
 }
 /* --------EXTEND------ */
 .item{
@@ -147,8 +173,8 @@ section div:hover{
     background-image: url(../Images/producto3.jpg);
 }
 .nuestrotrabajo{
-    height: 31.5rem;
-    padding-bottom: 40px;
+    height: 29rem;
+    padding-bottom: 0px;
 }
 .video{
     border-radius: 10px;

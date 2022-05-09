@@ -82,15 +82,67 @@ header nav div .navbar-nav {
   padding-bottom: 2rem;
 }
 
+.btn--vermas1 {
+  font-size: 17px;
+  color: orangered;
+  width: auto;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+
+.btn--vermas1:hover {
+  color: orangered;
+  text-shadow: 0 0 5px orangered;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.btn--vermas2 {
+  font-size: 17px;
+  color: white;
+  width: auto;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+
+.btn--vermas2:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
 .portada {
   background-image: url(../Images/R.jpg);
   background-size: cover;
   background-position: center;
   height: 700px;
-  color: orangered;
-  text-shadow: 0 0 5px white;
-  border-radius: 0;
-  margin-bottom: 0px;
 }
 
 .LOGO {
@@ -117,10 +169,6 @@ section div:hover {
 }
 
 /* ---------------PAGES HOME---------------- */
-.nosotros {
-  margin-bottom: 90px;
-}
-
 .textomenu {
   padding: 30px;
 }
@@ -130,7 +178,7 @@ section div:hover {
 }
 
 .dedicamos {
-  margin-bottom: 85px;
+  margin-bottom: 70px;
 }
 
 /* --------EXTEND------ */
@@ -166,8 +214,8 @@ section div:hover {
 }
 
 .nuestrotrabajo {
-  height: 31.5rem;
-  padding-bottom: 40px;
+  height: 29rem;
+  padding-bottom: 0px;
 }
 
 .video {

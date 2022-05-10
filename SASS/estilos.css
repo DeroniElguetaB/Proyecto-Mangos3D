@@ -260,12 +260,12 @@ section div:hover {
 }
 
 .slide {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 52px;
+  margin-right: 52px;
 }
 
 .slide img {
-  height: 550px;
+  height: 450px;
   border-radius: 15px;
 }
 
@@ -329,10 +329,6 @@ section div:hover {
     background-position-x: 0px;
     background-position-y: -400px;
   }
-  .slide {
-    margin-left: 14px !important;
-    margin-right: 14px !important;
-  }
   .video {
     width: 90%;
     height: 200px;
@@ -386,10 +382,6 @@ section div:hover {
     grid-area: item5;
     background-position-x: 0px;
     background-position-y: -300px;
-  }
-  .slide {
-    margin-left: 0px;
-    margin-right: 0px;
   }
   .video {
     width: 90%;
@@ -508,6 +500,10 @@ section div:hover {
     grid-area: item5;
     background-position-x: -40px;
     background-position-y: 0;
+  }
+  .slide {
+    margin-left: 170px !important;
+    margin-right: 170px !important;
   }
   .video {
     width: 60%;

@@ -37,7 +37,6 @@ header nav div .navbar-nav {
 }
 
 .navbar-brand:hover {
-  /* -webkit-transform: scale(1); */
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition-duration: 0.25s;
@@ -47,8 +46,6 @@ header nav div .navbar-nav {
 
 .nav-link:hover {
   color: white !important;
-  /* color: rgb(35, 34, 34) !important; */
-  /* filter: opacity(80%); */
   text-shadow: 0 0 20px black;
   -webkit-transform: scale(1);
   transform: scale(1.1);
@@ -215,8 +212,8 @@ section div:hover {
 }
 
 .nuestrotrabajo {
-  height: 29rem;
-  padding-bottom: 0px;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .video {
@@ -336,6 +333,10 @@ section div:hover {
     margin-left: 14px !important;
     margin-right: 14px !important;
   }
+  .video {
+    width: 90%;
+    height: 200px;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -390,6 +391,10 @@ section div:hover {
     margin-left: 0px;
     margin-right: 0px;
   }
+  .video {
+    width: 90%;
+    height: 340px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -443,6 +448,10 @@ section div:hover {
     grid-area: item5;
     background-position-x: 0;
     background-position-y: 0;
+  }
+  .video {
+    width: 90%;
+    height: 400px;
   }
 }
 
@@ -499,6 +508,10 @@ section div:hover {
     grid-area: item5;
     background-position-x: -40px;
     background-position-y: 0;
+  }
+  .video {
+    width: 60%;
+    height: 510px;
   }
 }
 

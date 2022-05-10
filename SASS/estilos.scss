@@ -75,35 +75,6 @@ header nav{
     padding-bottom: 2rem;
 }
 
-/* --------MAPS------ */
-$botones: (
-    vermas1: orangered,
-    vermas2: rgb(255, 255, 255),
-);
-
-@each $vermas, $color in $botones {
-    .btn--#{$vermas} {
-        font-size: 17px;
-        color: $color;
-        width: auto;
-        height: 50px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        border-radius: 20px;
-        text-transform: uppercase;
-        
-        margin-right: 20px;
-        margin-top: -20px;
-    }
-    .btn--#{$vermas}:hover {
-        color: $color;
-        text-shadow: 0 0 5px $color;
-        transform: scale(1.1);
-        transition-duration: 0.25s;
-    }
-}
-
 .portada{
     background-image: url(../Images/R.jpg);
     background-size: cover;
@@ -139,6 +110,36 @@ section div:hover{
 .img-fluid{
     border-radius: 10px;
 }
+
+/* --------MAPS------ */
+$botones: (
+    vermas1: orangered,
+    vermas2: rgb(255, 255, 255),
+);
+
+@each $vermas, $color in $botones {
+    .btn--#{$vermas} {
+        font-size: 17px;
+        color: $color;
+        width: auto;
+        height: 50px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        border-radius: 20px;
+        text-transform: uppercase;
+        
+        margin-right: 20px;
+        margin-top: -20px;
+    }
+    .btn--#{$vermas}:hover {
+        color: $color;
+        text-shadow: 0 0 5px $color;
+        transform: scale(1.1);
+        transition-duration: 0.25s;
+    }
+}
+
 .dedicamos{
     margin-bottom: 70px;
 }

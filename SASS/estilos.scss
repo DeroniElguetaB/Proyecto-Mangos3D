@@ -67,24 +67,59 @@ header nav{
         padding-right: 2rem;
     }
 }
-.parrafo{
-    text-align: center;
-    padding-bottom: 2rem;
-}
 
 .portada{
     background-image: url(../Images/R.jpg);
     background-size: cover;
     background-position: center;
     height: 700px;
+    .contenedor1{
+        height: 600px;
+        .cont--logo{
+            height: 160px;
+            background-color: rgba(255, 255, 255, 0.4);
+            // background-color: rgba(255, 69, 0, 0.2);
+            margin-bottom: -30px;
+        }
+        .contenedor2{
+            padding-top: 15px;
+            .contenedor3{
+                margin-right: 50px;
+                .LOGO {
+                    background-image: url(../Images/logotipo.png);
+                    background-size: cover;
+                    height: 70px;
+                    width: 70px;
+                    margin-right: 10px;
+                    filter:drop-shadow(0 0 5px $color1) ;
+                }
+                h3{
+                    color: $color1;
+                    font-size: 50px;
+                    margin-bottom: 0px;
+                    padding-top: 5px;
+                    text-shadow: 0 0 5px $color1;
+                }
+                    span{
+                        color: $color3;
+                        font-style: italic;
+                        padding: 0 auto;
+                    }
+            }
+            .contenedor4{
+                margin-right: 47px;
+                color: $color1;
+                font-size: 25px;
+                padding-left: 10px;
+            }
+        }
+    }
 }
-.LOGO {
-    background-image: url(../Images/logotipo.png);
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    filter: drop-shadow(10px 12px 5px $color3);
+.parrafo{
+    text-align: center;
+    padding-bottom: 2rem;
 }
+
 .container-fluid{
     padding-top: 1rem;
     padding-bottom: 1rem;

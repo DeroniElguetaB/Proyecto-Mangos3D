@@ -74,11 +74,6 @@ header nav div .navbar-nav {
   padding-right: 2rem;
 }
 
-.parrafo {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
 .portada {
   background-image: url(../Images/R.jpg);
   background-size: cover;
@@ -86,13 +81,58 @@ header nav div .navbar-nav {
   height: 700px;
 }
 
-.LOGO {
+.portada .contenedor1 {
+  height: 600px;
+}
+
+.portada .contenedor1 .cont--logo {
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: -30px;
+}
+
+.portada .contenedor1 .contenedor2 {
+  padding-top: 15px;
+}
+
+.portada .contenedor1 .contenedor2 .contenedor3 {
+  margin-right: 50px;
+}
+
+.portada .contenedor1 .contenedor2 .contenedor3 .LOGO {
   background-image: url(../Images/logotipo.png);
   background-size: cover;
-  height: 100px;
-  width: 100px;
-  -webkit-filter: drop-shadow(10px 12px 5px #232222);
-          filter: drop-shadow(10px 12px 5px #232222);
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+  -webkit-filter: drop-shadow(0 0 5px orangered);
+          filter: drop-shadow(0 0 5px orangered);
+}
+
+.portada .contenedor1 .contenedor2 .contenedor3 h3 {
+  color: orangered;
+  font-size: 50px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  text-shadow: 0 0 5px orangered;
+}
+
+.portada .contenedor1 .contenedor2 .contenedor3 span {
+  color: #232222;
+  font-style: italic;
+  padding: 0 auto;
+}
+
+.portada .contenedor1 .contenedor2 .contenedor4 {
+  margin-right: 47px;
+  color: orangered;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.parrafo {
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .container-fluid {

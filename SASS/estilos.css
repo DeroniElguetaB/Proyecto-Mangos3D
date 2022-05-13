@@ -12,6 +12,8 @@
 /* ----------------------------------------Header---------------------------------------- */
 header nav {
   font-size: 1.09rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 header nav span {
@@ -32,9 +34,9 @@ header nav div ul li {
 
 header nav div .navbar-nav {
   color: #232222;
-  padding-left: 1rem;
-  padding-right: 3rem;
-  text-align: right;
+  padding-left: 10px;
+  padding-right: 80px;
+  text-align: center;
 }
 
 header nav a {
@@ -51,11 +53,11 @@ header nav a {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.active {
+.bg-dark {
   background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
   background-image: linear-gradient(to left, orangered, #232222 95%) !important;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .navbar-brand:hover {

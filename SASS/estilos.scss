@@ -15,6 +15,7 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
+    transition: 1s;
     span{
         color: $color2;
         font-style: italic;
@@ -24,38 +25,35 @@ header nav{
         color: $color1 !important;
         font-size: 1.8rem;
         padding-left: 3rem;
+        // transition: 0.6s;
     }
     div ul li{
         padding-left: 3rem;
     }
         div .navbar-nav{
             color: $color3;
-            padding-left: 1rem;
-            padding-right: 3rem;
-            text-align: right;
+            padding-left: 10px;
+            padding-right: 80px;
+            text-align: center;
         }
         a{
             color: $color2 !important;
             margin-right: -40px;
             padding-left: 50px !important;
+            // transition: 0.6s;
         }
 }
+
 .navbar-light .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.4%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-toggler{
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
-
-.active{
+.bg-dark{
     background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
-    transition: 0.3s ease-in;
+    transition: 1s;
 }
-// .active:hover{
-//     height: 50px;
-//     transition: 0.3s ease;
-//     background-image: grey;
-// }
 
 .navbar-brand:hover{
     transform: scale(1.1);

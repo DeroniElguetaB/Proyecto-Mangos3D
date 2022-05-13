@@ -15,6 +15,7 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
+    background-color: transparent !important;
     span{
         color: $color2;
         font-style: italic;
@@ -22,7 +23,7 @@ header nav{
     }
     .navbar-brand{
         color: $color1 !important;
-        font-size: 1.6rem;
+        font-size: 2rem;
         padding-left: 3rem;
     }
     div ul li{
@@ -33,7 +34,14 @@ header nav{
             padding-left: 1rem;
             padding-right: 3rem;
         }
-    
+        a{
+            color: $color2;
+        }
+}
+
+.active{
+    transition: 5s;
+    background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
 }
 
 .navbar-brand:hover{
@@ -48,6 +56,7 @@ header nav{
     transform: scale(1.1);
     transition-duration: 0.25s;
 }
+
 /* ----------------------------------------Main---------------------------------------- */
 
 /* ---------------ALL PAGES---------------- */
@@ -72,13 +81,14 @@ header nav{
     background-image: url(../Images/R.jpg);
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 715px;
     .contenedor1{
         height: 600px;
         .cont--logo{
             height: 160px;
             background-color: rgba(255, 255, 255, 0.4);
-            // background-color: rgba(255, 69, 0, 0.2);
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
             margin-bottom: -30px;
         }
         .contenedor2{
@@ -91,14 +101,14 @@ header nav{
                     height: 70px;
                     width: 70px;
                     margin-right: 10px;
-                    filter:drop-shadow(0 0 5px $color1) ;
+                    filter:drop-shadow(0 0 5px $color3) ;
                 }
                 h3{
-                    color: $color1;
+                    color: $color3;
                     font-size: 50px;
                     margin-bottom: 0px;
                     padding-top: 5px;
-                    text-shadow: 0 0 5px $color1;
+                    text-shadow: 0 0 5px $color3;
                 }
                     span{
                         color: $color3;
@@ -108,7 +118,7 @@ header nav{
             }
             .contenedor4{
                 margin-right: 47px;
-                color: $color1;
+                color: $color3;
                 font-size: 25px;
                 padding-left: 10px;
             }

@@ -12,6 +12,7 @@
 /* ----------------------------------------Header---------------------------------------- */
 header nav {
   font-size: 1.09rem;
+  background-color: transparent !important;
 }
 
 header nav span {
@@ -22,7 +23,7 @@ header nav span {
 
 header nav .navbar-brand {
   color: orangered !important;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-left: 3rem;
 }
 
@@ -34,6 +35,17 @@ header nav div .navbar-nav {
   color: orangered;
   padding-left: 1rem;
   padding-right: 3rem;
+}
+
+header nav a {
+  color: white;
+}
+
+.active {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
+  background-image: linear-gradient(to left, orangered, #232222 95%) !important;
 }
 
 .navbar-brand:hover {
@@ -78,7 +90,7 @@ header nav div .navbar-nav {
   background-image: url(../Images/R.jpg);
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: 715px;
 }
 
 .portada .contenedor1 {
@@ -88,6 +100,8 @@ header nav div .navbar-nav {
 .portada .contenedor1 .cont--logo {
   height: 160px;
   background-color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   margin-bottom: -30px;
 }
 
@@ -105,16 +119,16 @@ header nav div .navbar-nav {
   height: 70px;
   width: 70px;
   margin-right: 10px;
-  -webkit-filter: drop-shadow(0 0 5px orangered);
-          filter: drop-shadow(0 0 5px orangered);
+  -webkit-filter: drop-shadow(0 0 5px #232222);
+          filter: drop-shadow(0 0 5px #232222);
 }
 
 .portada .contenedor1 .contenedor2 .contenedor3 h3 {
-  color: orangered;
+  color: #232222;
   font-size: 50px;
   margin-bottom: 0px;
   padding-top: 5px;
-  text-shadow: 0 0 5px orangered;
+  text-shadow: 0 0 5px #232222;
 }
 
 .portada .contenedor1 .contenedor2 .contenedor3 span {
@@ -125,7 +139,7 @@ header nav div .navbar-nav {
 
 .portada .contenedor1 .contenedor2 .contenedor4 {
   margin-right: 47px;
-  color: orangered;
+  color: #232222;
   font-size: 25px;
   padding-left: 10px;
 }

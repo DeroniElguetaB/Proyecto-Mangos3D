@@ -25,7 +25,6 @@ header nav{
         color: $color1 !important;
         font-size: 1.8rem;
         padding-left: 3rem;
-        // transition: 0.6s;
     }
     div ul li{
         padding-left: 3rem;
@@ -40,7 +39,6 @@ header nav{
             color: $color2 !important;
             margin-right: -40px;
             padding-left: 50px !important;
-            // transition: 0.6s;
         }
 }
 
@@ -52,7 +50,7 @@ header nav{
 }
 .bg-dark{
     background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
-    transition: 1s;
+    // transition: all 1s ease-in-out !important;
 }
 
 .navbar-brand:hover{
@@ -94,7 +92,7 @@ header nav{
     background-size: cover !important;
     background-position: center;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 710px;
     .jumbotron-fluid{
         width: auto;
         padding-left: 100px;
@@ -118,7 +116,7 @@ header nav{
     padding-bottom: 2rem;
 }
 .margen{
-    padding-top: 80px !important;
+    padding-top: 40px !important;
 }
 .container-fluid{
     padding-top: 1rem;

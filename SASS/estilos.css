@@ -12,7 +12,6 @@
 /* ----------------------------------------Header---------------------------------------- */
 header nav {
   font-size: 1.09rem;
-  background-color: transparent !important;
 }
 
 header nav span {
@@ -23,7 +22,7 @@ header nav span {
 
 header nav .navbar-brand {
   color: orangered !important;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-left: 3rem;
 }
 
@@ -32,20 +31,31 @@ header nav div ul li {
 }
 
 header nav div .navbar-nav {
-  color: orangered;
+  color: #232222;
   padding-left: 1rem;
   padding-right: 3rem;
+  text-align: right;
 }
 
 header nav a {
-  color: white;
+  color: white !important;
+  margin-right: -40px;
+  padding-left: 50px !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.4%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .active {
-  -webkit-transition: 5s;
-  transition: 5s;
   background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
   background-image: linear-gradient(to left, orangered, #232222 95%) !important;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .navbar-brand:hover {
@@ -86,67 +96,43 @@ header nav a {
   padding-right: 2rem;
 }
 
-.portada {
-  background-image: url(../Images/R.jpg);
-  background-size: cover;
+.banner-image {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.4)), to(rgba(5, 7, 12, 0.4))), url(../Images/R.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../Images/R.jpg);
+  position: relative;
+  background-size: cover !important;
   background-position: center;
-  height: 715px;
+  background-repeat: no-repeat;
+  height: 650px;
 }
 
-.portada .contenedor1 {
-  height: 600px;
+.banner-image .jumbotron-fluid {
+  width: auto;
+  padding-left: 100px;
 }
 
-.portada .contenedor1 .cont--logo {
-  height: 160px;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin-bottom: -30px;
+.banner-image .contenedor1 {
+  width: 150px;
+  height: 100%;
 }
 
-.portada .contenedor1 .contenedor2 {
-  padding-top: 15px;
-}
-
-.portada .contenedor1 .contenedor2 .contenedor3 {
-  margin-right: 50px;
-}
-
-.portada .contenedor1 .contenedor2 .contenedor3 .LOGO {
+.banner-image .contenedor1 .LOGO {
   background-image: url(../Images/logotipo.png);
   background-size: cover;
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   margin-right: 10px;
   -webkit-filter: drop-shadow(0 0 5px #232222);
           filter: drop-shadow(0 0 5px #232222);
 }
 
-.portada .contenedor1 .contenedor2 .contenedor3 h3 {
-  color: #232222;
-  font-size: 50px;
-  margin-bottom: 0px;
-  padding-top: 5px;
-  text-shadow: 0 0 5px #232222;
-}
-
-.portada .contenedor1 .contenedor2 .contenedor3 span {
-  color: #232222;
-  font-style: italic;
-  padding: 0 auto;
-}
-
-.portada .contenedor1 .contenedor2 .contenedor4 {
-  margin-right: 47px;
-  color: #232222;
-  font-size: 25px;
-  padding-left: 10px;
-}
-
 .parrafo {
   text-align: center;
   padding-bottom: 2rem;
+}
+
+.margen {
+  padding-top: 80px !important;
 }
 
 .container-fluid {

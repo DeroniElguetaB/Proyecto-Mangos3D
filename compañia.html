@@ -29,6 +29,14 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script>$(window).scroll(function() {
+        if ($(window).scrollTop() > 600) {
+            $(".navbar").addClass("active", "shadow");
+        } else {
+            $(".navbar").removeClass("active", "shadow");
+        }
+        });
+    </script>
     <!-- ------- Link estilos ------- -->
     <link rel="stylesheet" href="SASS/estilos.css">
     <!-- ------- TITLE ------- -->
@@ -36,7 +44,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark" style="background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%);">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light">
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">MANGOS<span>3D</span></a>
             <!-- Toggler/collapsibe Button -->
@@ -63,13 +71,19 @@
         </nav>
     </header>
     <main class="main">
-        <div class="container-fluid d-flex portada">
-            <div class="col"></div>
-            <div class="d-flex col justify-content-end align-items-end">
+        <div class="container-fluid banner-image d-flex justify-content-center align-items-center align-content-center">
+            <div class="jumbotron-fluid col">
+                <h1 class="display-4">Nuestra compañia</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Leer más</a>
+            </div>
+            <div class="contenedor1 col d-flex align-items-end justify-content-end">
                 <div class="LOGO"></div>
             </div>
         </div>
-        <div class="container-fluid justify-content-center align-items-center">
+        <div class="container-fluid margen justify-content-center align-items-center">
             <div>
                 <h2 class="sub1">¿Quienes somos?</h2>
             </div>

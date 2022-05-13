@@ -15,7 +15,6 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
-    background-color: transparent !important;
     span{
         color: $color2;
         font-style: italic;
@@ -23,26 +22,40 @@ header nav{
     }
     .navbar-brand{
         color: $color1 !important;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-left: 3rem;
     }
     div ul li{
         padding-left: 3rem;
     }
         div .navbar-nav{
-            color: $color1;
+            color: $color3;
             padding-left: 1rem;
             padding-right: 3rem;
+            text-align: right;
         }
         a{
-            color: $color2;
+            color: $color2 !important;
+            margin-right: -40px;
+            padding-left: 50px !important;
         }
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.4%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-light .navbar-toggler{
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .active{
-    transition: 5s;
     background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
+    transition: 0.3s ease-in;
 }
+// .active:hover{
+//     height: 50px;
+//     transition: 0.3s ease;
+//     background-image: grey;
+// }
 
 .navbar-brand:hover{
     transform: scale(1.1);
@@ -62,7 +75,7 @@ header nav{
 /* ---------------ALL PAGES---------------- */
 .main{
     background-color: $color3;
-    color: white;
+    color: $color2;
     div h2{
         margin-top: 1rem;
         margin-bottom: 3rem ;
@@ -77,59 +90,38 @@ header nav{
     }
 }
 
-.portada{
-    background-image: url(../Images/R.jpg);
-    background-size: cover;
+.banner-image{
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)) ,url(../Images/R.jpg);
+    position: relative;
+    background-size: cover !important;
     background-position: center;
-    height: 715px;
+    background-repeat: no-repeat;
+    height: 650px;
+    .jumbotron-fluid{
+        width: auto;
+        padding-left: 100px;
+    }
     .contenedor1{
-        height: 600px;
-        .cont--logo{
-            height: 160px;
-            background-color: rgba(255, 255, 255, 0.4);
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-            margin-bottom: -30px;
-        }
-        .contenedor2{
-            padding-top: 15px;
-            .contenedor3{
-                margin-right: 50px;
-                .LOGO {
-                    background-image: url(../Images/logotipo.png);
-                    background-size: cover;
-                    height: 70px;
-                    width: 70px;
-                    margin-right: 10px;
-                    filter:drop-shadow(0 0 5px $color3) ;
-                }
-                h3{
-                    color: $color3;
-                    font-size: 50px;
-                    margin-bottom: 0px;
-                    padding-top: 5px;
-                    text-shadow: 0 0 5px $color3;
-                }
-                    span{
-                        color: $color3;
-                        font-style: italic;
-                        padding: 0 auto;
-                    }
+        width: 150px;
+        height: 100%;
+            .LOGO {
+                background-image: url(../Images/logotipo.png);
+                background-size: cover;
+                height: 100px;
+                width: 100px;
+                margin-right: 10px;
+                filter:drop-shadow(0 0 5px $color3) ;
             }
-            .contenedor4{
-                margin-right: 47px;
-                color: $color3;
-                font-size: 25px;
-                padding-left: 10px;
-            }
-        }
     }
 }
+
 .parrafo{
     text-align: center;
     padding-bottom: 2rem;
 }
-
+.margen{
+    padding-top: 80px !important;
+}
 .container-fluid{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -148,7 +140,6 @@ section div:hover{
 .img-fluid{
     border-radius: 10px;
 }
-
 /* --------MAPS------ */
 $botones: (
     vermas1: orangered,

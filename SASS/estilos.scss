@@ -54,20 +54,22 @@ header nav{
 }
 
 .navbar-brand:hover{
-    transform: scale(1.1);
+    transform: scale(1.25);
     transition-duration: 0.25s;
     text-shadow: 0 0 7px $color1;
 }
 .nav-link:hover{
     color: $color2 !important;
-    text-shadow: 0 0 20px $color4;
+    text-shadow: 0 0 10px $color2;
     -webkit-transform: scale(1);
-    transform: scale(1.1);
+    transform: scale(1.3);
     transition-duration: 0.25s;
 }
 
 /* ----------------------------------------Main---------------------------------------- */
-
+html{
+    scroll-behavior: smooth;
+}
 /* ---------------ALL PAGES---------------- */
 .main{
     background-color: $color3;
@@ -94,12 +96,13 @@ header nav{
     background-repeat: no-repeat;
     height: 710px;
     .jumbotron-fluid{
-        width: auto;
+        height: 550px;
+        padding-top: 200px;
         padding-left: 100px;
     }
     .contenedor1{
-        width: 150px;
-        height: 100%;
+        height: 150px;
+        padding-bottom: 20px;
             .LOGO {
                 background-image: url(../Images/logotipo.png);
                 background-size: cover;
@@ -116,7 +119,7 @@ header nav{
     padding-bottom: 2rem;
 }
 .margen{
-    padding-top: 40px !important;
+    padding-top: 70px !important;
 }
 .container-fluid{
     padding-top: 1rem;
@@ -227,6 +230,7 @@ $botones: (
 /* ---------------PAGES MISION/VISION---------------- */
 .Mision{
     background-image:linear-gradient(to bottom , $color1 -10%, $color3);
+    padding-bottom: 50px;
 }
 .mision{
     text-shadow: 0px 0px 30px $color3 !important;

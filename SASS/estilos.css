@@ -12,8 +12,6 @@
 /* ----------------------------------------Header---------------------------------------- */
 header nav {
   font-size: 1.09rem;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 header nav span {
@@ -28,21 +26,24 @@ header nav .navbar-brand {
   padding-left: 3rem;
 }
 
-header nav div ul li {
-  padding-left: 3rem;
-}
-
 header nav div .navbar-nav {
   color: #232222;
-  padding-left: 10px;
-  padding-right: 80px;
+  margin-right: 40px;
   text-align: center;
 }
 
-header nav a {
+header nav div .navbar-nav a {
   color: white !important;
-  margin-right: -40px;
-  padding-left: 50px !important;
+  width: auto;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.navtransition {
+  background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
+  background-image: linear-gradient(to left, orangered, #232222 95%) !important;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -51,11 +52,6 @@ header nav a {
 
 .navbar-light .navbar-toggler {
   border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-.bg-dark {
-  background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
-  background-image: linear-gradient(to left, orangered, #232222 95%) !important;
 }
 
 .navbar-brand:hover {
@@ -103,7 +99,6 @@ html {
 .banner-image {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.4)), to(rgba(5, 7, 12, 0.4))), url(../Images/R.jpg);
   background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../Images/R.jpg);
-  position: relative;
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,7 +108,27 @@ html {
 .banner-image .jumbotron-fluid {
   height: 550px;
   padding-top: 200px;
-  padding-left: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.banner-image .jumbotron-fluid .display-4 {
+  text-shadow: 0 0 15px #232222;
+}
+
+.banner-image .jumbotron-fluid .btn-warning {
+  font-size: 17px;
+  border-radius: 60px;
+  border-color: orangered;
+  background-color: rgba(255, 69, 0, 0.6);
+}
+
+.banner-image .jumbotron-fluid .btn-warning:hover {
+  background-color: orangered;
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .banner-image .contenedor1 {
@@ -127,8 +142,20 @@ html {
   height: 100px;
   width: 100px;
   margin-right: 10px;
-  -webkit-filter: drop-shadow(0 0 5px #232222);
-          filter: drop-shadow(0 0 5px #232222);
+  -webkit-filter: drop-shadow(0 0 10px #232222);
+          filter: drop-shadow(0 0 10px #232222);
+}
+
+.banner-image .contenedor1 #LOGO {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.banner-image .contenedor1 #LOGO:hover {
+  height: 150px;
+  width: 150px;
+  -webkit-filter: drop-shadow(0 0 20px orangered) !important;
+          filter: drop-shadow(0 0 20px orangered) !important;
 }
 
 .parrafo {

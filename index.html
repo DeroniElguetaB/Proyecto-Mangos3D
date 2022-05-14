@@ -39,18 +39,18 @@
   */
     $(window).scroll(function() {
     if ($(window).scrollTop() > 150) {
-        $(".navbar").addClass("bg-dark");
+        $(".navbar").addClass("navtransition");
     } else {
-        $(".navbar").removeClass("bg-dark");
+        $(".navbar").removeClass("navtransition");
     }
     });
   // If Mobile, add background color when toggler is clicked
     $(".navbar-toggler").click(function() {
     if (!$(".navbar-collapse").hasClass("show")) {
-        $(".navbar").addClass("bg-dark");
+        $(".navbar").addClass("navtransition");
     } else {
         if ($(window).scrollTop() < 150) {
-        $(".navbar").removeClass("bg-dark");
+        $(".navbar").removeClass("navtransition");
         } else {
         }
     }
@@ -95,15 +95,15 @@
     </header>
     <main class="main">
         <div class="container-fluid banner-image">
-                <div class="jumbotron-fluid d-block justify-content-center">
+                <div class="jumbotron-fluid d-block justify-content-center" id="transicion1">
                     <h1 class="display-4">Somos MANGOS3D</h1>
                     <p class="lead">Servicio de impresiones y diseños</p>
                     <hr class="my-4">
                     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a class="btn btn-primary btn-lg" href="#1" role="button">Leer más</a>
+                    <a class="btn btn-warning btn-lg" href="#1" role="button">Leer más</a>
                 </div>
                 <div class="contenedor1 col d-flex justify-content-end align-items-end">
-                    <div class="LOGO"></div>
+                    <div class="LOGO" id="LOGO"></div>
                 </div>
         </div>
         <div id="1" class="container-fluid margen">

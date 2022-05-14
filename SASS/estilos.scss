@@ -15,7 +15,7 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
-    transition: 1s;
+    transition: all 1s ease;
     span{
         color: $color2;
         font-style: italic;
@@ -26,20 +26,21 @@ header nav{
         font-size: 1.8rem;
         padding-left: 3rem;
     }
-    div ul li{
-        padding-left: 3rem;
-    }
-        div .navbar-nav{
-            color: $color3;
-            padding-left: 10px;
-            padding-right: 80px;
-            text-align: center;
-        }
+    div .navbar-nav{
+        color: $color3;
+        margin-right: 40px;
+        text-align: center;
         a{
             color: $color2 !important;
-            margin-right: -40px;
-            padding-left: 50px !important;
+            width: auto;
+            margin-right: 30px;
+            margin-left: 30px;
         }
+    }
+}
+.navtransition{
+    background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
+    // transition: all 1s ease;
 }
 
 .navbar-light .navbar-toggler-icon{
@@ -47,10 +48,6 @@ header nav{
 }
 .navbar-light .navbar-toggler{
     border: 1px solid rgba(255, 255, 255, 0.4);
-}
-.bg-dark{
-    background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
-    // transition: all 1s ease-in-out !important;
 }
 
 .navbar-brand:hover{
@@ -90,7 +87,6 @@ html{
 
 .banner-image{
     background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)) ,url(../Images/R.jpg);
-    position: relative;
     background-size: cover !important;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,19 +94,43 @@ html{
     .jumbotron-fluid{
         height: 550px;
         padding-top: 200px;
-        padding-left: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
+        .display-4{
+            text-shadow: 0 0 15px $color3;
+        }
+        .btn-warning {
+            font-size: 17px;
+            border-radius: 60px;
+            border-color: orangered;
+            background-color: rgba(255, 69, 0, 0.6);
+        }
+        .btn-warning:hover {
+            background-color: $color1;
+            -webkit-transform: scale(1);
+            transform: scale(1.1);
+            transition-duration: 0.1s;
+        }
     }
     .contenedor1{
         height: 150px;
         padding-bottom: 20px;
-            .LOGO {
-                background-image: url(../Images/logotipo.png);
-                background-size: cover;
-                height: 100px;
-                width: 100px;
-                margin-right: 10px;
-                filter:drop-shadow(0 0 5px $color3) ;
-            }
+        .LOGO {
+            background-image: url(../Images/logotipo.png);
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            margin-right: 10px;
+            filter:drop-shadow(0 0 10px $color3) ;
+        }
+        #LOGO{
+            transition: all 1s;
+        }
+        #LOGO:hover{
+            height: 150px;
+            width: 150px;
+            filter:drop-shadow(0 0 20px $color1) !important;
+        }
     }
 }
 

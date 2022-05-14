@@ -15,7 +15,6 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
-    transition: all 1s ease;
     span{
         color: $color2;
         font-style: italic;
@@ -40,7 +39,7 @@ header nav{
 }
 .navtransition{
     background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
-    // transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .navbar-light .navbar-toggler-icon{
@@ -98,6 +97,7 @@ html{
         padding-right: 80px;
         .display-4{
             text-shadow: 0 0 15px $color3;
+            transition: all 1s;
         }
         .btn-warning {
             font-size: 17px;
@@ -114,22 +114,23 @@ html{
     }
     .contenedor1{
         height: 150px;
+        width: 150px;
+        float: right;
         padding-bottom: 20px;
         .LOGO {
             background-image: url(../Images/logotipo.png);
             background-size: cover;
-            height: 100px;
-            width: 100px;
+            height: 90px;
+            width: 90px;
             margin-right: 10px;
-            filter:drop-shadow(0 0 10px $color3) ;
-        }
-        #LOGO{
+            filter:drop-shadow(0 0 20px $color3) ;
             transition: all 1s;
         }
-        #LOGO:hover{
-            height: 150px;
-            width: 150px;
-            filter:drop-shadow(0 0 20px $color1) !important;
+        .LOGO:hover{
+            filter: contrast(50%);
+            filter: drop-shadow(0px 0px 10px blue);
+            height: 100px;
+            width: 100px;
         }
     }
 }
@@ -160,33 +161,33 @@ section div:hover{
     border-radius: 10px;
 }
 /* --------MAPS------ */
-$botones: (
-    vermas1: orangered,
-    vermas2: rgb(255, 255, 255),
-);
+// $botones: (
+//     vermas1: orangered,
+//     vermas2: rgb(255, 255, 255),
+// );
 
-@each $vermas, $color in $botones {
-    .btn--#{$vermas} {
-        font-size: 17px;
-        color: $color;
-        width: auto;
-        height: 50px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        border-radius: 20px;
-        text-transform: uppercase;
+// @each $vermas, $color in $botones {
+//     .btn--#{$vermas} {
+//         font-size: 17px;
+//         color: $color;
+//         width: auto;
+//         height: 50px;
+//         align-items: center;
+//         align-content: center;
+//         justify-content: center;
+//         border-radius: 20px;
+//         text-transform: uppercase;
         
-        margin-right: 20px;
-        margin-top: -20px;
-    }
-    .btn--#{$vermas}:hover {
-        color: $color;
-        text-shadow: 0 0 5px $color;
-        transform: scale(1.1);
-        transition-duration: 0.25s;
-    }
-}
+//         margin-right: 20px;
+//         margin-top: -20px;
+//     }
+//     .btn--#{$vermas}:hover {
+//         color: $color;
+//         text-shadow: 0 0 5px $color;
+//         transform: scale(1.1);
+//         transition-duration: 0.25s;
+//     }
+// }
 
 .dedicamos{
     margin-bottom: 70px;
@@ -294,13 +295,14 @@ $botones: (
 @media only screen and (min-width: 0px){ 
     .dedicamos{
         display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 0.7fr 1fr 1.3fr 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.7fr 1fr 1fr 1.3fr 1fr; 
         grid-template-areas: 
-        "item1 item1"
-        "item2 item3"
-        "item4 item4"
-        "item5 item5"; 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"; 
         gap: 13px;
         padding: 5px;
         width: auto;
@@ -312,11 +314,11 @@ $botones: (
     }
     .item2{
         grid-area: item2;
-        background-position-x: -170px;
+        background-position-x: -50px;
     }
     .item3{
         grid-area: item3;
-        background-position-x: -200px;
+        background-position-x: -75px;
     }
     .item4{
         grid-area: item4;

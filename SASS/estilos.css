@@ -114,6 +114,8 @@ html {
 
 .banner-image .jumbotron-fluid .display-4 {
   text-shadow: 0 0 15px #232222;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .banner-image .jumbotron-fluid .btn-warning {
@@ -133,29 +135,30 @@ html {
 
 .banner-image .contenedor1 {
   height: 150px;
+  width: 150px;
+  float: right;
   padding-bottom: 20px;
 }
 
 .banner-image .contenedor1 .LOGO {
   background-image: url(../Images/logotipo.png);
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   margin-right: 10px;
-  -webkit-filter: drop-shadow(0 0 10px #232222);
-          filter: drop-shadow(0 0 10px #232222);
-}
-
-.banner-image .contenedor1 #LOGO {
+  -webkit-filter: drop-shadow(0 0 20px #232222);
+          filter: drop-shadow(0 0 20px #232222);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.banner-image .contenedor1 #LOGO:hover {
-  height: 150px;
-  width: 150px;
-  -webkit-filter: drop-shadow(0 0 20px orangered) !important;
-          filter: drop-shadow(0 0 20px orangered) !important;
+.banner-image .contenedor1 .LOGO:hover {
+  -webkit-filter: contrast(50%);
+          filter: contrast(50%);
+  -webkit-filter: drop-shadow(0px 0px 10px blue);
+          filter: drop-shadow(0px 0px 10px blue);
+  height: 100px;
+  width: 100px;
 }
 
 .parrafo {
@@ -191,62 +194,6 @@ section div:hover {
 }
 
 /* --------MAPS------ */
-.btn--vermas1 {
-  font-size: 17px;
-  color: orangered;
-  width: auto;
-  height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 20px;
-  text-transform: uppercase;
-  margin-right: 20px;
-  margin-top: -20px;
-}
-
-.btn--vermas1:hover {
-  color: orangered;
-  text-shadow: 0 0 5px orangered;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-}
-
-.btn--vermas2 {
-  font-size: 17px;
-  color: white;
-  width: auto;
-  height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 20px;
-  text-transform: uppercase;
-  margin-right: 20px;
-  margin-top: -20px;
-}
-
-.btn--vermas2:hover {
-  color: white;
-  text-shadow: 0 0 5px white;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
-}
-
 .dedicamos {
   margin-bottom: 70px;
 }
@@ -358,11 +305,11 @@ section div:hover {
   .dedicamos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.7fr 1fr 1.3fr 1fr;
-        grid-template-rows: 0.7fr 1fr 1.3fr 1fr;
-        grid-template-areas: "item1 item1" "item2 item3" "item4 item4" "item5 item5";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.7fr 1fr 1fr 1.3fr 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr 1.3fr 1fr;
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5";
     gap: 13px;
     padding: 5px;
     width: auto;
@@ -371,7 +318,6 @@ section div:hover {
   .item1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: item1;
     background-position-y: -255px;
   }
@@ -379,25 +325,23 @@ section div:hover {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: item2;
-    background-position-x: -170px;
+    background-position-x: -50px;
   }
   .item3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: item3;
-    background-position-x: -200px;
-  }
-  .item4 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    grid-area: item3;
+    background-position-x: -75px;
+  }
+  .item4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
     grid-area: item4;
     background-position-x: -140px;
   }
   .item5 {
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: item5;
     background-position-x: 0px;
     background-position-y: -400px;

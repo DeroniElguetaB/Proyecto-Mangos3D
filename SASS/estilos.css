@@ -12,6 +12,8 @@
 /* ----------------------------------------Header---------------------------------------- */
 header nav {
   font-size: 1.09rem;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
 }
 
 header nav span {
@@ -29,7 +31,7 @@ header nav .navbar-brand {
 header nav div .navbar-nav {
   color: #232222;
   margin-right: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 header nav div .navbar-nav a {
@@ -42,8 +44,6 @@ header nav div .navbar-nav a {
 .navtransition {
   background-image: -webkit-gradient(linear, right top, left top, from(orangered), color-stop(95%, #232222)) !important;
   background-image: linear-gradient(to left, orangered, #232222 95%) !important;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -100,9 +100,16 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.4)), to(rgba(5, 7, 12, 0.4))), url(../Images/R.jpg);
   background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../Images/R.jpg);
   background-size: cover !important;
+  color: white !important;
   background-position: center;
   background-repeat: no-repeat;
-  height: 710px;
+  text-shadow: 0 0 15px #232222;
+  text-transform: uppercase;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  height: 715px;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
 }
 
 .banner-image .jumbotron-fluid {
@@ -113,7 +120,6 @@ html {
 }
 
 .banner-image .jumbotron-fluid .display-4 {
-  text-shadow: 0 0 15px #232222;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -138,7 +144,7 @@ html {
   width: 150px;
   float: right;
   padding-top: 40px;
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 .banner-image .contenedor1 .LOGO {
@@ -320,32 +326,37 @@ section div:hover {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: item1;
-    background-position-y: -255px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
   }
   .item2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: item2;
-    background-position-x: -50px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
   }
   .item3 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: item3;
-    background-position-x: -75px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
   }
   .item4 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: item4;
-    background-position-x: -140px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
   }
   .item5 {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: item5;
     background-position-x: 0px;
-    background-position-y: -400px;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
   }
   .video {
     width: 90%;
@@ -374,24 +385,29 @@ section div:hover {
     -ms-grid-column-span: 2;
     grid-area: item1;
     background-position-y: -120px;
+    background-repeat: no-repeat;
   }
   .item2 {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: item2;
     background-position-x: -160px;
+    background-repeat: no-repeat;
   }
   .item3 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: item3;
     background-position-x: -110px;
+    background-repeat: no-repeat;
   }
   .item4 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: item4;
+    background-position: 0px;
+    background-repeat: no-repeat;
   }
   .item5 {
     -ms-grid-row: 4;
@@ -400,6 +416,7 @@ section div:hover {
     grid-area: item5;
     background-position-x: 0px;
     background-position-y: -300px;
+    background-repeat: no-repeat;
   }
   .video {
     width: 90%;
@@ -430,6 +447,7 @@ section div:hover {
     grid-area: item1;
     background-position-x: -170px;
     background-position-y: 0;
+    background-repeat: no-repeat;
   }
   .item2 {
     -ms-grid-row: 1;
@@ -437,6 +455,7 @@ section div:hover {
     -ms-grid-column-span: 2;
     grid-area: item2;
     background-position-x: 0;
+    background-repeat: no-repeat;
   }
   .item3 {
     -ms-grid-row: 2;
@@ -444,6 +463,7 @@ section div:hover {
     -ms-grid-column-span: 2;
     grid-area: item3;
     background-position-x: 0;
+    background-repeat: no-repeat;
   }
   .item4 {
     -ms-grid-row: 3;
@@ -451,6 +471,7 @@ section div:hover {
     -ms-grid-column-span: 3;
     grid-area: item4;
     background-position-x: 0;
+    background-repeat: no-repeat;
   }
   .item5 {
     -ms-grid-row: 3;
@@ -458,6 +479,7 @@ section div:hover {
     grid-area: item5;
     background-position-x: 0;
     background-position-y: 0;
+    background-repeat: no-repeat;
   }
   .video {
     width: 90%;
@@ -491,18 +513,21 @@ section div:hover {
     grid-area: item1;
     background-position-x: -170px;
     background-position-y: 0;
+    background-repeat: no-repeat;
   }
   .item2 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: item2;
     background-position-x: -10px;
+    background-repeat: no-repeat;
   }
   .item3 {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: item3;
-    background-position-x: -40px;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
   }
   .item4 {
     -ms-grid-row: 1;
@@ -510,6 +535,7 @@ section div:hover {
     -ms-grid-column: 3;
     grid-area: item4;
     background-position-x: -80px;
+    background-repeat: no-repeat;
   }
   .item5 {
     -ms-grid-row: 1;
@@ -518,6 +544,7 @@ section div:hover {
     grid-area: item5;
     background-position-x: -40px;
     background-position-y: 0;
+    background-repeat: no-repeat;
   }
   .slide {
     margin-left: 170px !important;

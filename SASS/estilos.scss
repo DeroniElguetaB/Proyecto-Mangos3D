@@ -15,6 +15,7 @@ $color4: black;
 /* ----------------------------------------Header---------------------------------------- */
 header nav{
     font-size: 1.09rem;
+    transition: all 4s ease;
     span{
         color: $color2;
         font-style: italic;
@@ -28,7 +29,7 @@ header nav{
     div .navbar-nav{
         color: $color3;
         margin-right: 40px;
-        text-align: center;
+        text-align: left;
         a{
             color: $color2 !important;
             width: auto;
@@ -39,7 +40,7 @@ header nav{
 }
 .navtransition{
     background-image: linear-gradient(to left, orangered, rgb(35, 34, 34) 95%) !important;
-    transition: all 1s ease;
+    // transition: all 3s ease;
 }
 
 .navbar-light .navbar-toggler-icon{
@@ -87,16 +88,20 @@ html{
 .banner-image{
     background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)) ,url(../Images/R.jpg);
     background-size: cover !important;
+    color: $color2 !important;
     background-position: center;
     background-repeat: no-repeat;
-    height: 710px;
+    text-shadow: 0 0 15px $color3;
+    text-transform: uppercase;
+    text-decoration: solid;
+    height: 715px;
+    transition: all 4s ease;
     .jumbotron-fluid{
         height: 550px;
         padding-top: 200px;
         padding-left: 80px;
         padding-right: 80px;
         .display-4{
-            text-shadow: 0 0 15px $color3;
             transition: all 1s;
         }
         .btn-warning {
@@ -117,7 +122,7 @@ html{
         width: 150px;
         float: right;
         padding-top: 40px;
-        padding-left: 40px;
+        padding-left: 50px;
         .LOGO {
             background-image: url(../Images/logotipo.png);
             background-size: cover;
@@ -311,24 +316,29 @@ section div:hover{
     }
     .item1{
         grid-area: item1;
-        background-position-y: -255px;
+        background-position-y: 0px;
+        background-repeat: no-repeat;
     }
     .item2{
         grid-area: item2;
-        background-position-x: -50px;
+        background-position-x: 0px;
+        background-repeat: no-repeat;
     }
     .item3{
         grid-area: item3;
-        background-position-x: -75px;
+        background-position-x: 0px;
+        background-repeat: no-repeat;
     }
     .item4{
         grid-area: item4;
-        background-position-x: -140px ;
+        background-position-x: 0px ;
+        background-repeat: no-repeat;
     }
     .item5{
         grid-area: item5;
         background-position-x: 0px;
-        background-position-y: -400px;
+        background-position-y: -100px;
+        background-repeat: no-repeat;
     }
     .video{
         width: 90%;
@@ -354,22 +364,28 @@ section div:hover{
     .item1{
         grid-area: item1;
         background-position-y: -120px;
+        background-repeat: no-repeat;
     }
     .item2{
         grid-area: item2;
         background-position-x: -160px;
+        background-repeat: no-repeat;
     }
     .item3{
         grid-area: item3;
         background-position-x: -110px;
+        background-repeat: no-repeat;
     }
     .item4{
         grid-area: item4;
+        background-position: 0px;
+        background-repeat: no-repeat;
     }
     .item5{
         grid-area: item5;
         background-position-x: 0px;
         background-position-y: -300px;
+        background-repeat: no-repeat;
     }
     .video{
         width: 90%;
@@ -396,23 +412,28 @@ section div:hover{
             grid-area: item1;
             background-position-x: -170px;
             background-position-y: 0;
+            background-repeat: no-repeat;
         }
         .item2{
             grid-area: item2;
             background-position-x: 0;
+            background-repeat: no-repeat;
         }
         .item3{
             grid-area: item3;
             background-position-x: 0;
+            background-repeat: no-repeat;
         }
         .item4{
             grid-area: item4;
             background-position-x: 0;
+            background-repeat: no-repeat;
         }
         .item5{
             grid-area: item5;
             background-position-x: 0;
             background-position-y: 0;
+            background-repeat: no-repeat;
         }
         .video{
             width: 90%;
@@ -441,23 +462,28 @@ section div:hover{
         grid-area: item1;
         background-position-x: -170px;
         background-position-y: 0;
+        background-repeat: no-repeat;
     }
     .item2{
         grid-area: item2;
         background-position-x:-10px;
+        background-repeat: no-repeat;
     }
     .item3{
         grid-area: item3;
-        background-position-x:-40px;
+        background-position-x: 0px;
+        background-repeat: no-repeat;
     }
     .item4{
         grid-area: item4;
         background-position-x: -80px;
+        background-repeat: no-repeat;
     }
     .item5{
         grid-area: item5;
         background-position-x: -40px;
         background-position-y: 0;
+        background-repeat: no-repeat;
     }
     .slide{
         margin-left: 170px !important;

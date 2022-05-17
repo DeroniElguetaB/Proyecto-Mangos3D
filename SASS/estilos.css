@@ -292,6 +292,8 @@ section div:hover {
 }
 
 .slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 450px;
   border-radius: 15px;
 }

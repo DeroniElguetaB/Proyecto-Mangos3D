@@ -68,7 +68,7 @@
             <div class="container-fluid banner-image">
                 <div class="jumbotron-fluid d-block justify-content-center">
                     <h1 class="display-4">"MAKERS"</h1>
-                    <p class="lead">EXPLORA NUESTRA NUEVA OPCION MAKERS!</p>
+                    <p class="lead">EXPLORA NUESTRA NUEVA OPCION PARA COTIZAR TU PEDIDO</p>
                     <a class="btn btn-warning btn-lg" href="#4" role="button">Leer más</a>
                 </div>
                 <div class="contenedor1 col">
@@ -76,9 +76,80 @@
                 </div>
             </div>
             <div class="container-fluid margen stock" id="4">
-                <div>
-                    <h2 class="Stock">CALCULADORA DE COSTOS - MAKERS</h2>
-                </div>
+                <h2 class="Stock">ESTIMADOR DE COSTOS - MAKERS</h2>
+            </div>
+            <div class="container formulario">
+                <form id="CotizadorMangos">
+                    <div>
+                        <h4>DIMENSIONES</h4>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationDefault01">Alto</label>
+                            <input type="number" class="form-control" id="validationDefault01" value="" placeholder="Ej. 25" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Unidad</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                            <option selected disabled value="">Elegir</option>
+                            <option>Milímetros</option>
+                            <option>Centímetros</option>
+                            <option>Metros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationDefault02">Largo</label>
+                            <input type="number" class="form-control" id="validationDefault02" value="" placeholder="Ej. 25" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Unidad</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                            <option selected disabled value="">Elegir</option>
+                            <option>Milímetros</option>
+                            <option>Centímetros</option>
+                            <option>Metros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationDefault03">Ancho</label>
+                            <input type="number" class="form-control" id="validationDefault03" value="" placeholder="Ej. 10" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Unidad</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                            <option selected disabled value="">Elegir</option>
+                            <option>Milímetros</option>
+                            <option>Centímetros</option>
+                            <option>Metros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>TIPO DE MATERIAL</h4>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-9 mb-3">
+                            <label for="validationDefault05">Material</label>
+                            <select class="custom-select" id="validationDefault04" required>
+                                <option selected disabled value="">Elegir</option>
+                                <option>PPP</option>
+                                <option>FFF</option>
+                                <option>MMM</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault03">Cantidad</label>
+                            <input type="number" class="form-control" id="validationDefault03" value="" placeholder="Ej. 10" required>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">COTIZAR</button>
+                    </div>
+                </form>
             </div>
         </main>
         <footer class="footer">

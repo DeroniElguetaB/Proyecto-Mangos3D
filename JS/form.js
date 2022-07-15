@@ -18,16 +18,27 @@ class DatosUsuario {
     constructor (nombre, apellido, ciudad, provincia, codigoPostal, email, telefono, descripcion){
         this.nombre = nombre.toUpperCase()
         this.apellido = apellido.toUpperCase()
-        this.ciudad = ciudad
+        this.ciudad = ciudad.toUpperCase()
         this.provincia = provincia
         this.codigoPostal = codigoPostal
         this.email = email
         this.telefono = telefono
-        this.descripcion = descripcion
+        this.descripcion = descripcion.toUpperCase()
     }
 }
 
 formulario3D.onsubmit = (event) => validarFormulario(event)
+
+function localStoragePedidos () {
+    const pedidoJSON = JSON.stringify(perfilUsuario)
+    localStorage.setItem("listaPedidos", pedidoJSON)
+}
+function obtenerLocalStoragePedidos(){
+    let listaDePedidosLS = localStorage.getItem("listaPedidos")
+    if (listaDePedidosLS !== null){
+        perfilUsuario = JSON.parse (listaDePedidosLS)
+    }
+}
 
 function validarFormulario (event) {
     event.preventDefault()
@@ -43,6 +54,9 @@ function validarFormulario (event) {
     let datosUser = new DatosUsuario (nombre, apellido, ciudad, provincia, codigoPostal, email, telefono, descripcion)
     perfilUsuario.push(datosUser)
 
+    localStoragePedidos()
+    swal(`Hola `,`Datos enviados!`, "success")
     formulario3D.reset()
+    obtenerLocalStoragePedidos()
     console.log(perfilUsuario)
 }

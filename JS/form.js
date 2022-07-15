@@ -27,11 +27,9 @@ class DatosUsuario {
     }
 }
 
-formulario3D.onsubmit = (event) => validarFormulario(event)
-
 function localStoragePedidos () {
-    const pedidoJSON = JSON.stringify(perfilUsuario)
-    localStorage.setItem("listaPedidos", pedidoJSON)
+    // const pedidoJSON = JSON.stringify(perfilUsuario)
+    localStorage.setItem("listaPedidos", JSON.stringify(perfilUsuario))
 }
 function obtenerLocalStoragePedidos(){
     let listaDePedidosLS = localStorage.getItem("listaPedidos")
@@ -39,6 +37,8 @@ function obtenerLocalStoragePedidos(){
         perfilUsuario = JSON.parse (listaDePedidosLS)
     }
 }
+
+formulario3D.onsubmit = (event) => validarFormulario(event)
 
 function validarFormulario (event) {
     event.preventDefault()
@@ -55,8 +55,8 @@ function validarFormulario (event) {
     perfilUsuario.push(datosUser)
 
     localStoragePedidos()
-    swal(`Hola `,`Datos enviados!`, "success")
-    formulario3D.reset()
     obtenerLocalStoragePedidos()
+    formulario3D.reset()
+    swal(`Hola `,`Datos enviados!`, "success")
     console.log(perfilUsuario)
 }

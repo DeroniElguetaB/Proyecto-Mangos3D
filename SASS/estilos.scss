@@ -63,7 +63,11 @@ header nav{
     transform: scale(1.3);
     transition-duration: 0.25s;
 }
-
+@media (min-width: 955px){
+.navbar-expand-md .navbar-toggler {
+    display: none;
+    }
+}
 /* ----------------------------------------Main---------------------------------------- */
 html{
     scroll-behavior: smooth;
@@ -295,6 +299,17 @@ section div:hover{
 /* ---------------PAGES PEDIDOS---------------- */
 .formulario{
     height: auto;
+}
+.swal-button {
+    color:$color3;
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: $color3;
+    font-size: 12px;
+    border: 1px solid $color3;
+}
+.swal-button:not([disabled]):hover {
+    background-color: $color1;
 }
 
 /* ---------------Media Queries---------------- */

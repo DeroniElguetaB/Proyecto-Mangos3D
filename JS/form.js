@@ -33,9 +33,12 @@ function localStoragePedidos () {
 }
 function obtenerLocalStoragePedidos(){
     let listaDePedidosLS = localStorage.getItem("listaPedidos")
-    if (listaDePedidosLS !== null){
-        perfilUsuario = JSON.parse (listaDePedidosLS)
-    }
+
+    listaDePedidosLS !== null ? perfilUsuario = JSON.parse (listaDePedidosLS) : swal({
+        title: "Error",
+        text: "Faltan valores",
+        icon: "Error",
+    });
 }
 
 formulario3D.onsubmit = (event) => validarFormulario(event)
@@ -57,6 +60,5 @@ function validarFormulario (event) {
     localStoragePedidos()
     obtenerLocalStoragePedidos()
     formulario3D.reset()
-    swal(`Hola `,`Datos enviados!`, "success")
-    console.log(perfilUsuario)
+    swal(`Gracias ` + nombre ,`Tus datos fueron enviados correctamente`, "success")
 }

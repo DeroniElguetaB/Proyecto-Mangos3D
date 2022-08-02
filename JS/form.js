@@ -1,3 +1,5 @@
+
+// Aplicacion del DOM -------------------------------------//
 let formulario3D = document.getElementById("formularioMangos")
 let inputNombre = document.getElementById("validationDefault01")
 let inputApellido = document.getElementById("validationDefault02")
@@ -11,6 +13,8 @@ let inputEmail = document.getElementById("exampleFormControlInput1")
 let inputTelefono = document.getElementById("exampleFormControlTextarea1")
 let inputDescription = document.getElementById("exampleFormControlTextarea2")
 let check = document.getElementById("customCheck1")
+
+// Creacion de un array de pedidos y constructor -------------------------------------//
 
 let perfilUsuario = []
 
@@ -26,6 +30,7 @@ class DatosUsuario {
         this.descripcion = descripcion.toUpperCase()
     }
 }
+// aplicacion de funciones -------------------------------------//
 
 function localStoragePedidos () {
     localStorage.setItem("listaPedidos", JSON.stringify(perfilUsuario))
@@ -39,6 +44,8 @@ function obtenerLocalStoragePedidos(){
         icon: "Error",
     });
 }
+
+// Eventos al enviar formulario -------------------------------------//
 
 formulario3D.addEventListener('submit', handleSubmit)
 

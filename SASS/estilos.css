@@ -316,19 +316,6 @@ section div:hover {
   height: auto;
 }
 
-.swal-button {
-  color: #232222;
-  padding: 10px 20px;
-  border-radius: 2px;
-  background-color: #232222;
-  font-size: 12px;
-  border: 1px solid #232222;
-}
-
-.swal-button:not([disabled]):hover {
-  background-color: orangered;
-}
-
 /* ---------------Media Queries---------------- */
 /* // Extra small devices (portrait phones,less than <576px) */
 @media only screen and (min-width: 0px) {
@@ -339,11 +326,7 @@ section div:hover {
         grid-template-columns: 1fr;
     -ms-grid-rows: 0.7fr 1fr 1fr 1.3fr 1fr;
         grid-template-rows: 0.7fr 1fr 1fr 1.3fr 1fr;
-        grid-template-areas: "item1"
- "item2"
- "item3"
- "item4"
- "item5";
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5";
     gap: 13px;
     padding: 5px;
     width: auto;
@@ -400,10 +383,7 @@ section div:hover {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 0.7fr 1fr 1.3fr 1fr;
         grid-template-rows: 0.7fr 1fr 1.3fr 1fr;
-        grid-template-areas: "item1 item1"
- "item2 item3"
- "item4 item4"
- "item5 item5";
+        grid-template-areas: "item1 item1" "item2 item3" "item4 item4" "item5 item5";
     gap: 25px;
     padding: 20px;
     width: auto;
@@ -463,9 +443,7 @@ section div:hover {
         grid-template-columns: 1fr 1.3fr 0.5fr 1.2fr;
     -ms-grid-rows: 0.5fr 0.5fr 1fr;
         grid-template-rows: 0.5fr 0.5fr 1fr;
-        grid-template-areas: "item1 item1 item2 item2"
- "item1 item1 item3 item3"
- "item4 item4 item4 item5";
+        grid-template-areas: "item1 item1 item2 item2" "item1 item1 item3 item3" "item4 item4 item4 item5";
     gap: 25px;
     padding: 20px;
     width: auto;
@@ -526,8 +504,7 @@ section div:hover {
     display: grid;
     -ms-flex-line-pack: center;
         align-content: center;
-        grid-template-areas: "item1 item2 item4 item5"
- "item1 item3 item4 item5";
+        grid-template-areas: "item1 item2 item4 item5" "item1 item3 item4 item5";
     -ms-grid-columns: 1.2fr 0.8fr 1.3fr 0.7fr;
         grid-template-columns: 1.2fr 0.8fr 1.3fr 0.7fr;
     -ms-grid-rows: 1fr 1fr;

@@ -64,3 +64,24 @@ async function handleSubmit(event){
         this.reset()
     } 
 }
+
+formulario3D.onsubmit = (event) => validarFormulario(event)
+
+function validarFormulario (event) {
+    event.preventDefault()
+    let nombre = inputNombre.value
+    let apellido = inputApellido.value
+    let ciudad = inputCiudad.value
+    let provincia = inputProvincia.value
+    let codigoPostal = inputCP.value
+    let email = inputEmail.value
+    let telefono = inputTelefono.value
+    let descripcion = inputDescription.value
+
+    let datosUser = new DatosUsuario (nombre, apellido, ciudad, provincia, codigoPostal, email, telefono, descripcion)
+    perfilUsuario.push(datosUser)
+
+    localStoragePedidos()
+    obtenerLocalStoragePedidos()
+    swal(`Gracias ` + nombre.toUpperCase() ,`Tus datos fueron enviados correctamente`, "success")
+}
